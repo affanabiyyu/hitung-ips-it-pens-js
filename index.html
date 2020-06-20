@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Aplikasi Hitung IP</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  
+</head>
+
+<body>
+
+  <!-- Hero Judul -->
+  <section class="hero is-info bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Aplikasi Hitung IP
+        </h1>
+        <h2 class="subtitle">
+          Untuk D4 & D3 Informatika PENS
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns has-background-light">
+        <div class="column has-background-light is-3">
+
+          <!-- Masukkan Kelas Anda -->
+          <h1 class="title">1.</h1>
+          <h2 class="subtitle">Masukkan kelas anda:</h2>
+
+          <!-- Tahun -->
+          <div class="field">
+            <label class="label">Tahun:</label>
+            <div class="control">
+              <div class="select">
+                <select id="tahun">
+                  <option>2018 / Sebelumnya</option>
+                  <option>2019 / Setelahnya</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prodi -->
+          <div class="field">
+            <label class="label">Prodi:</label>
+            <div class="control">
+              <div class="select">
+                <select id="prodi">
+                  <option>D3</option>
+                  <option>D4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kelas -->
+          <div class="field">
+            <label class="label">Semester:</label>
+            <div class="control">
+              <div class="select">
+                <select id="semester">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tombol OK -->
+          <div class="field">
+            <label class="label">Klik:</label>
+            <div class="control">
+              <button id="btnOk" class="button is-info">OK</button>
+            </div>
+          </div>
+
+        </div>      
+
+        <div class="column is-7">
+          <!-- Judul -->
+          <h1 class="title">2.</h1>
+          <h2 class="subtitle">Masukkan nilai anda:</h2>
+
+          <!-- Table -->
+          <table id="matkul" class="table is-striped">
+
+          </table>
+        </div>
+
+        <div class="column is-2">
+          <!-- Judul -->
+          <h1 class="title">3.</h1>
+          <h2 class="subtitle">Klik Submit:</h2>
+
+          <!-- Tombol Submit -->
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-info" id="btnSubmit">Submit</button>
+            </div>
+          </div>
+
+          <!-- Judul -->
+          <h1 class="title" id="titleIp"></h1>
+          <h2 class="subtitle" id="outputIp"></h2>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Script JS -->
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
